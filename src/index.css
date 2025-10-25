@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define HSL variables */
+:root {
+  --background: 0 0% 100%;       /* White */
+  --foreground: 240 10% 3.9%;    /* Dark gray */
+}
+
+.dark {
+  --background: 240 10% 3.9%;    /* Dark mode background */
+  --foreground: 0 0% 98%;        /* Light text for dark mode */
+}
+
+/* Apply the variables */
+body {
+  @apply bg-background text-foreground;
+}
